@@ -1,6 +1,5 @@
-﻿using System;
+﻿using System.Globalization;
 using tyuiu.cources.programming.interfaces.Sprint1;
-using System.Globalization;
 namespace Tyuiu.BalinVV.Sprint1.Task3.V10.Lib
 {
     public class DataService : ISprint1Task3V10
@@ -9,12 +8,12 @@ namespace Tyuiu.BalinVV.Sprint1.Task3.V10.Lib
         {
             CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
             number = Math.Round(number, 3);
-            double rubles = 0;
-            double kopeiki = 0;
+            int rubles = 0;
+            int kopeiki = 0;
 
-            rubles = (double)number;
+            rubles = (int)number;
             double ost = (number - rubles) * 100;
-            kopeiki = (double)ost;
+            kopeiki = (int)ost;
 
 
             return $"{number} руб. - это {rubles} руб. {kopeiki} коп.";
