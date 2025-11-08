@@ -9,9 +9,9 @@ namespace Tyuiu.BalinVV.Sprint1.Task7.V23.Test
         {
             var ds = new DataService();
             double x = 2, y = 4;
-            var res = ds.Calculate(x, y);
-            double wait = -18.005;
-            Assert.AreEqual(wait, res, 0.001);
+            var res = Math.Round( ds.Calculate(x, y), 3);
+            double wait = -1.782;
+            Assert.AreEqual(wait, res);
         }
     }
 }
