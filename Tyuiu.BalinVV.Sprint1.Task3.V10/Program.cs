@@ -1,8 +1,10 @@
 ﻿using Tyuiu.BalinVV.Sprint1.Task3.V10.Lib;
+using System.Globalization;
 internal class Program
 {
     static void Main(string[] args)
     {
+        CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
         Console.Title = "Спринт #1 | Выполнил: Выполнил Балин В. В. | СМАРТб-25-1";
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* Спринт #1                                                               *");
